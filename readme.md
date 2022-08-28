@@ -24,7 +24,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 # Devops
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
-| qemu | solaris | [link](https://github.com/binhojulix/portfolio/tree/master/dados/airflow/chapter01) |
+| qemu | solaris | [link](https://github.com/binhojulix/portfolio/tree/master/infra/so/solaris) |
 
 
 # Programacao
