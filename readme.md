@@ -39,7 +39,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 # Web
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
-| javascript-passos-programacao-orientada-objetos | android | [link](https://github.com/binhojulix/portfolio/tree/master/web/js/javascript-passos-programacao-orientada-objetos) |
+| javascript-passos-programacao-orientada-objetos | javascript | [link](https://github.com/binhojulix/portfolio/tree/master/web/js/javascript-passos-programacao-orientada-objetos) |
 
 
 # Mobile
