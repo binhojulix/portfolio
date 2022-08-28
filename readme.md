@@ -31,6 +31,8 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | ------------- |:-------------:| :-----:|
 | doorments | php | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/php/doorments) |
 | corretor ortografico| python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/corretor-ortografico) |
+| exercicio matematico| c | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/c/ExercicioMatematico) |
+
 
 # Web
 | Titulo        | Artigo           | Repositorio  |
@@ -43,6 +45,8 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 # Dados
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
+| airflow | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/airflow/chapter01) |
+| corretor ortografico| python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/corretor-ortografico) |
 
 
 # Busssiness
