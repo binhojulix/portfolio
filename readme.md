@@ -68,6 +68,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | numpy training | python |[link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/numpy-training-main) |
 | pandas basico| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/pandas-basico-main) |
 | pandas entrada saida de dados| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/pandas-entrada-saida-de-dados-main) |
+| Linguagem R| R| [link](https://github.com/binhojulix/portfolio/tree/master/dados/linguagem_r) |
 
 # Busssiness
 | Titulo        | Artigo           | Repositorio  |
