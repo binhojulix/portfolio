@@ -24,8 +24,6 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 
 
 
-
-
 # Devops
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
@@ -37,3 +35,5 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
 | doorments | php | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/php/doorments) |
+| corretor ortografico| python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/corretor-ortografico) |
+
