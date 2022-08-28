@@ -36,7 +36,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | web scrapping | python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/web-scrapping-ml) |
 | exercicio matematico| c | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/c/ExercicioMatematico) |
 | game java| java | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/game_java) |
-
+| produto| java | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/produto) |
 
 
 # Web
@@ -71,7 +71,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | Linguagem R| R| [link](https://github.com/binhojulix/portfolio/tree/master/dados/linguagem_r) |
 | pandas entrada saida de dados| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/pandas-entrada-saida-de-dados-main) |
 | auditoria visao computacional| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/visaocomputacional/fiap-ml-visao-computacional-auditoria-video-master) |
-
+| Estastistica| python-R| [link](https://github.com/binhojulix/portfolio/tree/master/dados/Estat%C3%ADstica) |
 
 
 
