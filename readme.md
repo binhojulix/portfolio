@@ -69,6 +69,11 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | pandas basico| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/pandas-basico-main) |
 | pandas entrada saida de dados| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/pandas-entrada-saida-de-dados-main) |
 | Linguagem R| R| [link](https://github.com/binhojulix/portfolio/tree/master/dados/linguagem_r) |
+| pandas entrada saida de dados| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/pandas-entrada-saida-de-dados-main) |
+| auditoria visao computacional| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/visaocomputacional/fiap-ml-visao-computacional-auditoria-video-master) |
+
+
+
 
 # Busssiness
 | Titulo        | Artigo           | Repositorio  |
