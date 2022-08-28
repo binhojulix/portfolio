@@ -154,7 +154,7 @@ class MaterialJDBC implements MaterialDao {
             ResultSet resultado = stmt.executeQuery();
             while (resultado.next()) {
                 Material material = new Material();
-                material.setCodigoCPTM(resultado.getString("CODIGO_CPTM"));
+                material.setCodigoCPTM(resultado.getString("CODIGO"));
                 material.setCodigoMaterial(resultado.getString("CODIGO_MATERIAL"));
                 material.setDescricao(resultado.getString("DESCRICAO"));
                 material.setGaveta(resultado.getString("GAVETA"));
