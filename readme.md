@@ -34,6 +34,8 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | corretor ortografico| python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/corretor-ortografico) |
 | web scrapping | python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/web-scrapping-ml) |
 | exercicio matematico| c | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/c/ExercicioMatematico) |
+| game java| java | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/game_java) |
+
 
 
 # Web
