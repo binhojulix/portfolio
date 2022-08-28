@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  
+    <title>Livros</title>
+</head>
+
+<body>
+
+<!-- inicio da listagem em si-->
+<section>
+
+    <% include ../includes/menu.ejs%>
+
+
+    <ul>
+        <% for(var i=0; i<livros.length; i++) {%>
+        <li>
+            <h2 class="product-title"><%=livros[i].titulo%></h2>
+        </li>
+        <%}%>
+    </ul>
+
+
+
+    
+</section>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+    socket.on('novaPromocao', function(data) {
+        alert("Livro em promoção " + data.livro.id);
+    });
+</script>
+</body>
+</html>

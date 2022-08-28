@@ -1,0 +1,56 @@
+<!doctype html>
+<html language='pt-br'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'> 
+
+        <!-- build:css css/index.min.css -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo_produtos.css">
+        <!-- endbuild -->
+
+        <title>Loja Virtual</title>
+    </head>
+
+
+    <body>
+
+    <header>
+      <svg>
+          <circle cx="50" cy="50" r="40" fill="#F90">
+            my blog
+      </svg>
+
+        <h1>Listagem de texto</h1>
+    </header>
+
+
+    <% include ../includes/menu.ejs%>
+
+     <main>
+           <table>
+            <thead>
+               <tr>
+                   <th>id</th>
+                   <th>nome</th>
+                   <th>descricao</th>
+                   <th>preco</th>
+               </tr>
+
+            </thead>
+               <tr>
+                   <% for(var i=0; i<lista.length; i++) {%>
+                       <tr>
+                           <td><%= lista[i].id %></td>
+                           <td><%= lista[i].titulo %></td>
+                           <td><%= lista[i].preco %></td>
+                           <td><%= lista[i].descricao%></td>
+                       </tr>
+                   <% } %>
+               </tr>
+           </table>
+       </main>    
+
+        <footer></footer>
+    </body>
+</html>

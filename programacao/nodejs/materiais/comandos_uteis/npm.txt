@@ -1,0 +1,16 @@
+
+npm init
+npm install nome_do_modulo
+npm install -g nome_do_modulo
+npm install nome_do_modulo --save
+npm list
+npm list-g 
+npm remove nome_do_modulo
+npm remove -g nome_do_modulo
+npm update
+npm update -g nome_do_modulo
+npm -v
+npm adduser nome_do_usuario
+npm whoami
+npm publish
+npm help

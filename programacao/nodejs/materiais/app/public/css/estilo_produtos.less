@@ -1,0 +1,118 @@
+/*box-sizing: border-box;
+display:block;
+display:inline;
+ text-indent: -99999px;
+display:inline-block;
+ background-image: url(github.png);
+*/
+
+/*
+img + p (primeiro paragrafo de pois de uma foto)
+li ~ li (se aplica apartir do segundo item)
+tag:before (texto decorativo);
+lessc arquivo.less arquivo.css
+*/
+
+
+@cor-body: #F2F5F7;
+
+
+
+body{
+	 overflow: scroll;
+}
+
+main{
+	background-color: #F2F5F7;
+}
+
+
+header{
+	background-color: white;
+    padding: 5px;
+    border-radius:15px;
+    border: 1px solid black;
+    box-shadow:5px 5px 3px rgba(0,0,0,0.7);
+     transform: skew(20deg)
+        rotate(1deg)
+        scale(0.9);
+
+    margin: 20px 0;
+}
+
+h1{
+	font-family:'Comic Sans MS',cursive;
+	font-weight: bold;
+	font-size: 22px;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+}
+
+li ~li{
+	margin-left: 1px;
+}
+nav{
+	margin: 20px;
+	background:linear-gradient(to top, gray, black);
+	border-radius: 15px;
+}
+
+nav li{
+	display: inline-block;
+	padding: 10px;
+}
+
+nav li a{
+	margin: 0;
+	text-decoration: none;
+	color: white;
+}
+
+nav li:hover{
+	background-color: purple;
+	border-radius: 20px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr:hover{
+	background-color: #F2FFFC;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+	background-color: gray;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media(min-width: 350px){
+	table{
+		width: 100%;
+	}
+	nav{
+		display: none;
+	}
+}
+
+@media not all and (max-width: 600px) {
+    .menu-abrir,
+    .menu-fechar {
+        display: none;
+    }
+}
+
+
+
+
+

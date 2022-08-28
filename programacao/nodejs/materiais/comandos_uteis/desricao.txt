@@ -1,0 +1,16 @@
+um jogo com javascript usando canvas.
+conectar com mysql, mongodb e redis.
+interface com bootstrap.
+autentificacao com oauth e tocken ring.
+consumer jquery, angular1, angular2, js e typescript.
+validação dos formularios com regexp.
+testes.
+design responsivo.
+flexbox
+googlechart
+progressive web
+grunt
+gulp
+less
+websocket
+testes com mocha.
