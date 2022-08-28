@@ -12,7 +12,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 4.  [Web](#web)
 5.  [Mobile](#mobile)
 6.  [Dados](#dados)
-7.  [Busssiness](#bussiness)
+7.  [Busssiness](#busssiness)
 8.  [Design](#design)
 
 
@@ -31,6 +31,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | ------------- |:-------------:| :-----:|
 | doorments | php | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/php/doorments) |
 | corretor ortografico| python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/corretor-ortografico) |
+| web scrapping | python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/web-scrapping-ml) |
 | exercicio matematico| c | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/c/ExercicioMatematico) |
 
 

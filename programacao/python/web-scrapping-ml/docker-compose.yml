@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  scrap:
+    build: 
+     context: ${SERVICE}
+    volumes:
+      - .:/data
+
