@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/labels"
+        android:text="@string/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_player1"
+                style="@style/labels"
+                android:text="@string/score_1_name" />
+
+            <Button
+                android:id="@+id/btn_player1"
+                style="@style/btn_warning"
+                android:text="@string/player_1_name" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/labels"
+                android:id="@+id/txt_turn"
+                android:text="@string/versus" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                style="@style/btn_danger"
+                android:text="@string/btn_reset" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_player2"
+                style="@style/labels"
+                android:text="@string/score_1_name" />
+
+            <Button
+                android:id="@+id/btn_player2"
+                style="@style/btn_info"
+                android:text="@string/player_2_name" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView style="@style/size" android:id="@+id/img_default"/>
+
+
+</LinearLayout>

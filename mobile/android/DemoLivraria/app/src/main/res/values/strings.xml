@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemoLivraria</string>
+    <string name="label_senha">Digite a Senha</string>
+    <string name="label_nome">Digite o Nome</string>
+    <string name="btn_entrar">Entrar</string>
+    <string name="lembrar_senha">Lembrar Senha</string>
+</resources>
