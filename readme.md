@@ -72,7 +72,11 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | auditoria visao computacional| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/visaocomputacional/fiap-ml-visao-computacional-auditoria-video-master) |
 | Estastistica| python-R| [link](https://github.com/binhojulix/portfolio/tree/master/dados/Estat%C3%ADstica) |
 
-
+| Geolocalizacao| sql| [link](https://github.com/binhojulix/portfolio/tree/master/dados/geolacalizacao) |
+| linguagem python | python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/linguagem_python) |
+| deteccao de fraude | python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machine_learning/deteccao_fraude) |
+| credit score | python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machine_learning/credit_score) |
+| predict future sale| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machine_learning/predict_future_sale) |
 
 # Busssiness
 | Titulo        | Artigo           | Repositorio  |
