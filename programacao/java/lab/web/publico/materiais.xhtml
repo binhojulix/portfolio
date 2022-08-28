@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/WEB-INF/templates/template.xhtml">
+
+        <ui:define name="title">Materiais</ui:define>
+
+        <ui:define name="conteudo-principal">
+
+            <fieldset>
+                <legend>Materiais</legend>
+
+                <h:form id="edicao" styleClass="form-inline">  
+
+                    <div class="form-group">
+                        <h:outputLabel value="Coluna:"/>
+                        <h:selectOneMenu value="#{materialBean.coluna}" styleClass="form-control">
+                            <f:selectItem itemValue="CODIGO_MATERIAL" itemLabel="COD. MATERIAL" />
+                            <f:selectItem itemValue="DESCRICAO" itemLabel="DESCRIÇÃO"/>
+                            <f:selectItem itemValue="CODIGO_CPTM" itemLabel="COD CPTM"/>
+                            <f:selectItem itemValue="GAVETA" itemLabel="GAVETA"/>
+                            <f:selectItem itemValue="SISTEMA" itemLabel="SISTEMA"/>
+                            <f:selectItem itemValue="ESTOQUE" itemLabel="ESTOQUE"/>
+                        </h:selectOneMenu>
+                    </div>
+
+                    <div class="form-group">
+                        <h:outputLabel value="Valor:"/>
+                        <h:inputText  value="#{materialBean.criterio}" styleClass="form-control"/>
+                    </div>
+
+                    <div class="form-group">
+                        <br/>
+                        <h:commandButton value="Pesquisar" actionListener="#{materialBean.listarMaterial}" styleClass="btn btn-primary btn-lg">
+                            <f:ajax render=":listagem :edicao" execute=":edicao :listagem"/>
+                        </h:commandButton>
+                    </div>
+
+                </h:form>
+                
+                <hr/>
+
+                <h:form id="listagem" styleClass="col-md-11">
+                    <h:dataTable  value="#{materialBean.materiais}" id="materiais" var="material" rendered="#{!empty materialBean.materiais}" styleClass="table table-striped">   
+
+                        <h:column>
+                            <f:facet name="header">Cód. Material</f:facet>
+                                #{material.codigoMaterial}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Cód. CPTM</f:facet>
+                                #{material.codigoCPTM}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Descrição</f:facet>
+                                #{material.descricao}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Sistema</f:facet>
+                                #{material.sistema}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">QTD</f:facet>
+                                #{material.estoque}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Gaveta</f:facet>
+                                #{material.gaveta}
+                        </h:column>
+
+
+                    </h:dataTable>
+
+                </h:form>
+
+            </fieldset>
+        </ui:define>
+    </ui:composition>
+</html>
+

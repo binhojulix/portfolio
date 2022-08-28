@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+<faces-config version="2.1"
+              xmlns="http://java.sun.com/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd">
+
+    <application>
+        <action-listener>
+            org.primefaces.application.DialogActionListener
+        </action-listener>
+        <navigation-handler>
+            org.primefaces.application.DialogNavigationHandler
+        </navigation-handler>
+        <view-handler>
+            org.primefaces.application.DialogViewHandler
+        </view-handler>
+    </application>
+    
+    
+    <navigation-rule>
+        <from-action>#{sffBean.novo}</from-action>
+        <navigation-case>
+            <from-outcome>novo-sff</from-outcome>
+            <to-view-id>/sff/adm-sff.xhtml</to-view-id>
+            <redirect></redirect>
+        </navigation-case>
+    </navigation-rule>
+    
+    
+    
+    <navigation-rule>
+        <from-action>#{mBControleSessao.sair}</from-action>
+        <navigation-case>
+            <from-outcome>sair</from-outcome>
+            <to-view-id>/publico/home.xhtml</to-view-id>
+            <redirect></redirect>
+        </navigation-case>
+    </navigation-rule>
+     
+    <navigation-rule>
+        <from-action>/restrict/fechar.xhtml</from-action>
+        <navigation-case>
+            <from-outcome>home</from-outcome>
+            <to-view-id>/publico/home.xhtml</to-view-id>
+            <redirect></redirect>
+        </navigation-case>
+    </navigation-rule>
+
+ 
+ 
+
+</faces-config>

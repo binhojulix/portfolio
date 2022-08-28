@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition template="/WEB-INF/templates/template.xhtml">
+
+        <ui:define name="title">Sff</ui:define>
+
+        <ui:define name="conteudo-principal">
+
+
+            <h:form id="edicao">
+
+                <fieldset>
+                    <legend>Cadastrar Editar Sff</legend>
+
+                    <p:messages/>
+
+                    <h:inputHidden id="id" value="#{sffBeanCadastro.sff.id}" />
+                    <h:panelGrid columns="7">
+
+                        <p:outputLabel value="Sff:" for="sff" />
+                        <p:outputLabel value="Solicitante:" for="solicitante" />
+                        <p:outputLabel value="Material:" for="material" />
+                        <p:outputLabel value="Qtd.:" for="qtdMaterial" />
+                        <p:outputLabel value="Osm:" for="osmSff" />
+                               <p:outputLabel value="Data:" for="data" />
+                        <p:spacer/>
+
+                        <p:inputText id="sff" value="#{sffBeanCadastro.sff.sff}" title="Sff" size="6"/>
+
+                        <p:autoComplete 
+                            id="solicitante" required="true"  requiredMessage="Campo: solicitante obrigatório" minQueryLength="5"
+                            value="#{sffBeanCadastro.sff.solicitante}" completeMethod="#{usuarioBean.completar}"
+                            var="func"  itemLabel="#{func.matricula}" itemValue="#{func}" maxResults="5" >
+                            <p:column headerText="Nome">
+                                #{func.nome}
+                            </p:column>
+                            <p:column headerText="Matricula">
+                                #{func.matricula}
+                            </p:column>
+                            <p:column headerText="Area">
+                                #{func.area.codigo}
+                            </p:column>
+                            <p:column headerText="Telefone">
+                                #{func.telefone}
+                            </p:column>
+                        </p:autoComplete>
+
+
+                        <p:inputText id="material" value="#{sffBeanCadastro.sff.material}" title="Material" 
+                                     required="true" requiredMessage="Campo material Obrigatório"
+                                     size="60"/>
+
+
+                        <p:inputText id="qtdMaterial" value="#{sffBeanCadastro.sff.qtdMaterial}" title="QtdMaterial" 
+                                     size="2"
+                                     required="true" requiredMessage="Campo Quantidade obrigatório">
+                            <f:validateDoubleRange  minimum="1"/>
+                        </p:inputText>
+
+
+
+                        <p:inputText id="osmSff" value="#{sffBeanCadastro.sff.osm}"
+                                     title="OsmSff"  size="6"
+                                     required="true" requiredMessage="Campo osm obrigatório"/>
+
+                        <p:calendar value="#{sffBeanCadastro.sff.dataUltimoAndamento}" 
+                                 id="data" validator="data-atual" required="true" 
+                                 requiredMessage="campo: data obrigatório" 
+                                 locale="pt" mode="popup" pattern="dd/MM/yyyy"  />
+
+
+                        <h:commandButton value="Adicionar" styleClass="btn btn-default">
+                            <f:ajax execute=":edicao" render=":edicao :listagem" 
+                                    listener="#{sffBeanCadastro.adicionar}"/>
+                        </h:commandButton>
+
+
+
+                    </h:panelGrid>
+                </fieldset>
+
+            </h:form>
+
+
+
+
+
+            <h:form id="listagem" style="margin-top: 50px">
+
+
+                <h:commandButton value="Salvar" styleClass="btn btn-primary
+                                 btn-lg btn-block"
+                                 action="#{sffBeanCadastro.salvarSFF}"
+                                 rendered="#{!empty sffBeanCadastro.sffs}"
+                                 style="margin-bottom: 50px">
+                </h:commandButton>
+
+
+
+                <h:dataTable value="#{sffBeanCadastro.sffs}" var="sff"
+                             rendered="#{!empty sffBeanCadastro.sffs}"
+                             styleClass="table table-striped" >    
+
+
+                    <h:column>
+                        <f:facet name="header">Sff</f:facet>
+                        <h:outputText value="#{sff.sff}"/>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">Solicitante</f:facet>
+                        <h:outputText value="#{sff.solicitante.nome}"/>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">Material</f:facet>
+                        <h:outputText value="#{sff.material}"/>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">Qtd.:</f:facet>
+                        <h:outputText value="#{sff.qtdMaterial}"/>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">OSM:</f:facet>
+                        <h:outputText value="#{sff.osm}"/>
+                    </h:column>
+                    
+                       <h:column>
+                        <f:facet name="header">Data:</f:facet>
+                        <h:outputText value="#{sff.dataUltimoAndamento}">
+                            <f:convertDateTime  pattern="dd/MM/yyyy"/>
+                        </h:outputText>
+                    </h:column>
+
+                    <h:column>
+
+                        <f:facet name="header">Remover</f:facet>
+
+                        <h:commandLink action="#{sffBeanCadastro.remover}" title="Excluir">
+                            <f:setPropertyActionListener value="#{sff}"
+                                                         target="#{sffBeanCadastro.sff}"/>
+                            <f:ajax execute="@form" render=":edicao :listagem"/>
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </h:commandLink>   
+
+
+                    </h:column>
+
+                </h:dataTable>
+            </h:form>
+
+
+        </ui:define>
+    </ui:composition>
+</html>
+

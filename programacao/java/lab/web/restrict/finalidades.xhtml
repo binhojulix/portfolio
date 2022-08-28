@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition template="/WEB-INF/templates/template.xhtml">
+
+        <ui:define name="title">Finalidade</ui:define>
+
+        <ui:define name="conteudo-principal">
+
+
+
+
+            <h:form styleClass="form-horizontal" id="edicao">
+                <fieldset>
+                    <legend><h:outputText binding="#{finalidadeBBean.mensagemAcao}"
+                                          value="Finalidade"/></legend>
+                    <h:messages styleClass="alert alert-danger"/>
+                    <div class="form-group">
+                        <h:outputLabel value="Sistema" for="sistema" styleClass="col-sm-2 control-label"/>
+                        <div class="col-sm-4">
+                            <h:selectOneMenu styleClass="form-control" id="sistema"
+                                             binding="#{finalidadeBBean.sistemas}">
+                                <f:ajax event="change" render="subsistema codigo_sistema subsistema codigo_subsistema"
+                                        listener="#{finalidadeBBean.atualizarSistema}"/>
+                                <f:selectItem value="#{null}"/>
+                                <f:selectItems value="#{finalidadeBBean.selectisistemas}"/>
+                            </h:selectOneMenu>
+                        </div>
+
+                        <div class="col-sm-1">
+                            <h:inputText binding="#{finalidadeBBean.inputSistema}"
+                                         maxlength="3"
+                                         validatorMessage="Campo do código do sistema inválido"
+                                         onchange="this.value = this.value.toUpperCase();"
+                                         styleClass="form-control" id="codigo_sistema">
+                                <f:validateRegex pattern="[A-Z]*"/>
+                            </h:inputText>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <h:outputLabel value="SubSistema" styleClass="col-sm-2 control-label"/>
+                        <div class="col-sm-4">
+                            <h:selectOneMenu styleClass="form-control" id="subsistema"
+                                             binding="#{finalidadeBBean.subsistemas}">
+                                <f:ajax event="change" render="subsistema codigo_subsistema"
+                                        listener="#{finalidadeBBean.atualizarSub}" />
+                                <f:selectItem value="#{null}"/>
+                                <f:selectItems value="#{finalidadeBBean.selectisubsistemas}"/>
+                            </h:selectOneMenu>
+                        </div>
+
+                        <div class="col-sm-1">
+                            <h:inputText binding="#{finalidadeBBean.inputSubsistema}"
+                                         styleClass="form-control"
+                                         maxlength="2"
+                                         validatorMessage="Campo do código do Sub sistema inválido"
+                                         id="codigo_subsistema">
+                                <f:validateRegex pattern="[0-9]*"/>
+                            </h:inputText>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <h:outputLabel value="Equipamento" styleClass="col-sm-2 control-label"
+                                       binding="#{finalidadeBBean.lbdescricao}"/>
+                        <div class="col-sm-4">
+                            <h:inputText binding="#{finalidadeBBean.inputDescricao}"
+                                         onchange="this.value = this.value.toUpperCase();"
+                                         styleClass="form-control" maxlength="100"/>
+                        </div>
+
+                        <div class="col-sm-1">
+                            <h:inputText  styleClass="form-control" maxlength="2"
+                                          onchange="this.value = this.value.toUpperCase();"
+                                          validatorMessage="Campo do código do Equipamento inválido"
+                                          binding="#{finalidadeBBean.inputEquipamento}">
+                                <f:validateRegex pattern="[0-9]*"/>
+                            </h:inputText>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                         <h:outputLabel value="Novo" styleClass="col-sm-2 control-label"/>
+                        <div class="col-sm-4">
+                            <h:selectOneRadio rendered="true" requiredMessage="Selecione uma operacao"
+                                              value="#{finalidadeBBean.opt}">
+                                   <f:ajax event="change" render="@form"
+                                           listener="#{finalidadeBBean.novaFinalidade}"/>
+                                <f:selectItem itemLabel="Sistema" itemValue="sistema"/>
+                                <f:selectItem itemLabel="Subsitema" itemValue="subsistema"/>
+                                <f:selectItem itemLabel="Equipamento" itemValue="equipamento"/>
+                            </h:selectOneRadio>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="form-group">
+
+                        <div class="col-sm-offset-2 col-sm-4">
+
+
+                            <h:commandButton action="#{finalidadeBBean.salvar}" value="Salvar"
+                                             styleClass="btn btn-default btn-lg btn-block">
+                            </h:commandButton>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </h:form>
+
+
+
+            <div style="width: 100%; background-color: #333; margin: 50px 0 5px 0; padding: 1px 0 1px 0;
+                 border-radius: 4px">
+                <h3 style="color: #adadad;" class="text-center">Lista de Equipamentos</h3>
+
+            </div>
+
+            <h:form id="listagem">
+
+                <p:dataTable value="#{finalidadeBBean.listarTodos}" var="equi"
+                             filteredValue="#{finalidadeBBean.listarFilter}"
+                             rows="20" paginator="true"  paginatorPosition="bottom" 
+                             rowStyleClass="#{finalidadeBBean.tipoFinalidade(equi.codigo)}"
+                             paginatorTemplate="{FirstPageLink} {PreviousPageLink} {NextPageLink} 
+                             {LastPageLink}">
+
+                    <p:column filterBy="#{equi.codigo}" headerText="Código">
+                        #{equi.codigo}
+                    </p:column>
+
+                    <p:column filterBy="#{equi.descricao}" headerText="Descrição">
+                        #{equi.descricao}
+                    </p:column>
+
+                    <p:column headerText="Editar" style="width: 40px">
+                        <h:commandLink  title="Editar" action="#{finalidadeBBean.editar}">
+                            <f:setPropertyActionListener value="#{equi}" 
+                                                         target="#{finalidadeBBean.eqpt_operacoes}"/>
+                            <f:ajax execute=":listagem" render=":edicao :listagem"/>
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </h:commandLink>    
+
+                    </p:column>
+
+                    <p:column headerText="Excluir" style="width: 40px">
+
+
+                        <h:commandLink  title="Excluir" action="#{finalidadeBBean.excluir}" onclick="if (!confirm('Confirma a exclusão  #{equi.codigo}?')) return false;">
+                            <f:setPropertyActionListener value="#{equi}" 
+                                                         target="#{finalidadeBBean.eqpt_operacoes}"/>
+                            <f:ajax execute=":listagem" render=":edicao :listagem"/>
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </h:commandLink>     
+                    </p:column>
+
+                </p:dataTable>
+
+            </h:form>
+
+
+
+        </ui:define>
+    </ui:composition>
+</html>
+

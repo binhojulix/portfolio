@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="erros/sessao_expirada.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="erros/404.xhtml" x="400" y="600" zoom="true"/>
+        <Node id="erros/erro.xhtml" x="400" y="450" zoom="true"/>
+        <Node id="restrict/movimentacao.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="acesso_negado.xhtml" x="650" y="300" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

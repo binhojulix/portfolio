@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition template="/WEB-INF/templates/template.xhtml">
+
+        <ui:define name="title">Sff</ui:define>
+
+        <ui:define name="conteudo-principal">
+
+
+            <h:form id="form" >
+                <fieldset>
+                    <legend>Adm sff</legend>
+
+                    <p:messages id="msgs"/>
+
+                    <p:dataTable value="#{sffBean.sffs}" var="item" editable="true"  id="tabela_sff" 
+                                 filteredValue="#{sffBean.sffsFilter}"
+                                 emptyMessage="" paginator="true" rows="20" 
+                                 paginatorPosition="bottom"
+                                 style="font-size: 12px; font-weight: bold"
+                                 paginatorTemplate="{FirstPageLink} {PreviousPageLink}
+                                 {NextPageLink} {LastPageLink}">
+
+                        <p:ajax event="rowEdit" listener="#{sffBean.onRowEdit}" update=":form:msgs" />
+
+                        <p:ajax event="rowToggle" listener="#{sffBean.showDetails}" update=":form:msgs" /> 
+
+
+                        <h:inputHidden value="#{item.id}"/>
+
+
+                        <p:column headerText="Sff" filterBy="#{item.sff}" 
+                                  filterMatchMode="contains" style="padding: 5px">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{item.sff}"/></f:facet>
+                                <f:facet name="input">
+                                    <p:inputText id="sff" value="#{item.sff}" style="width:96%"/>
+                                </f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+
+                        <p:column headerText="Solicitante" filterBy="#{item.solicitante.nome}"
+                                  filterMatchMode="contains" style="padding: 5px">
+                            <h:outputText value="#{item.solicitante.nome}" title="#{item.solicitante.matricula}"/>
+                        </p:column>
+
+                        <p:column headerText="Material" filterBy="#{item.material}"
+                                  filterMatchMode="contains" style="padding: 5px">
+                            <h:outputText value="#{item.material}"/>
+                        </p:column>
+
+                        <p:column headerText="Qtd.:" style="padding: 5px">
+                            <h:outputText value="#{item.qtdMaterial}"/>
+                        </p:column>
+
+                        <p:column headerText="Osm" filterBy="#{item.osm}"
+                                  filterMatchMode="contains" style="padding: 5px">
+                            <h:outputText title="Vizualicar OSM"
+                                          value="#{item.osm.numero}"/>  
+                        </p:column>
+
+
+                        <p:column headerText="Data.: Andamento" style="padding: 5px">
+                            <h:outputText value="#{item.dataUltimoAndamento}">
+                                <f:convertDateTime dateStyle="medium" type="date"/>
+                            </h:outputText>
+                        </p:column>
+
+
+                        <p:column headerText="Andamento" filterBy="#{item.ultimoAndamento}">                     
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{item.ultimoAndamento}" /></f:facet>
+                                <f:facet name="input">
+                                    <p:inputText id="andamento" value="#{item.ultimoAndamento}" style="width:96%"/>
+                                </f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+
+                        <p:column headerText="Excluir"
+                                  rendered="#{facesContext.externalContext.isUserInRole('ADMIN2')}">
+                            <h:commandLink action="#{sffBean.excluir}" title="Excluir">
+                                <f:setPropertyActionListener value="#{item}" target="#{sffBean.sff}"/>
+                                <f:ajax execute="@form" render="@form"/>
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </h:commandLink>   
+                        </p:column>
+
+
+                        <p:column>
+                            <p:rowEditor />
+                        </p:column>
+
+
+                        <p:column>
+                            <p:rowToggler/>
+                        </p:column>
+
+
+                        <p:rowExpansion>
+
+                            <h:panelGrid columns="2" id="osm-show">
+                                <h:outputText value="OSM: "/> <h:outputText value="#{sffBean.sff.osm.numero}"/>
+                                <h:outputText value="Equipamento: "/> <h:outputText value="#{sffBean.sff.osm.equipamento.descricao}" />
+                                <h:outputText value="Local: "/> <h:outputText value="#{sffBean.sff.osm.local.descricao}" />
+                                <h:outputText value="Estacao: "/> <h:outputText value="#{sffBean.sff.osm.estacao.descricao}" />
+                            </h:panelGrid>
+
+                            <hr/>
+
+                            <h:dataTable var="andamento" value="#{sffBean.sff.andamentos}"
+                                         styleClass="table table-bordered"
+                                         rowClasses="warning, danger"
+                                         rendered="#{!empty sffBean.sff.andamentos}">
+
+                                <h:column>
+                                    <f:facet name="header">Andamento</f:facet>
+                                    <h:inputHidden value="#{andamento.id}" />
+                                    <h:outputText value="#{andamento.data}">
+                                        <f:convertDateTime dateStyle="full" type="date"/>
+                                    </h:outputText>
+                                </h:column>
+
+                                <h:column>
+                                    <f:facet name="header">Data</f:facet>
+                                    <h:outputText value="#{andamento.descricaoAndamento}" />
+                                </h:column>
+
+                            </h:dataTable>
+
+
+                        </p:rowExpansion>
+
+
+                    </p:dataTable>
+
+                </fieldset>
+
+
+            </h:form>
+
+
+        </ui:define>
+    </ui:composition>
+</html>
+
