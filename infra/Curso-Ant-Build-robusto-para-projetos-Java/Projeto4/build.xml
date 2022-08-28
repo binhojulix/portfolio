@@ -1,0 +1,89 @@
+<project name="agenda" default="compilar">
+	<property file="build.properties" />
+
+	<path id="classpath-compilacao">
+		<fileset dir="WebContent/WEB-INF/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="classpath-compilacao-teste">
+		<path refid="classpath-compilacao" />
+		<fileset dir="lib-teste">
+			<include name="*.jar" />
+		</fileset>
+		<pathelement path="${build.dir}/${classes.dir}" />
+	</path>
+
+	<path id="classpath-execucao-teste">
+		<path refid="classpath-compilacao-teste" />
+		<pathelement path="${build.dir}/${classes.teste.dir}" />
+	</path>
+
+	<target name="limpar">
+		<delete dir="${build.dir}" />
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${build.dir}/${classes.dir}" />
+		<mkdir dir="${build.dir}/${classes.teste.dir}" />
+	</target>
+
+	<target name="compilar" depends="limpar">
+		<javac destdir="${build.dir}/${classes.dir}" srcdir="src">
+			<classpath refid="classpath-compilacao" />
+		</javac>
+	</target>
+
+	<target name="compilar-teste" depends="compilar">
+		<javac destdir="${build.dir}/${classes.teste.dir}" srcdir="src-teste">
+			<classpath refid="classpath-compilacao-teste" />
+		</javac>
+	</target>
+
+	<target name="executar-teste" depends="compilar-teste">
+		<junit showoutput="true" printsummary="on">
+			<batchtest>
+				<formatter type="plain" />
+				<fileset dir="src-teste">
+					<include name="**/*Test.java" />
+				</fileset>
+			</batchtest>
+			<classpath refid="classpath-execucao-teste" />
+		</junit>
+	</target>
+
+	<target name="empacotar" depends="compilar">
+		<war destfile="build/agenda.war" webxml="WebContent/WEB-INF/web.xml">
+			<fileset dir="WebContent" />
+			<classes dir="build/classes" />
+		</war>
+	</target>
+
+	<target name="deploy-local" depends="empacotar">
+		<copy file="build/agenda.war" todir="/pastaDoTomcat/webapps" />
+	</target>
+
+	<target name="rodar-tomcat-local">
+		<exec executable="/pastaDoTomcat/bin/startup.sh" />
+	</target>
+
+	<target name="parar-tomcat-local">
+		<exec executable="/pastaDoTomcat/bin/shutdown.sh" />
+	</target>
+
+	<target name="touch-war-no-servidor-remoto">
+		<sshexec host="192.168.0.100" username="caelum" password="senhaSecreta" command="touch /pastaDeployRemoto/agenda.war" />
+	</target>
+
+	<target name="deploy-remoto">
+		<scp file="build/agenda.war" todir="usuario@ip-do-servidor:/pastaDeployRemoto" password="senhaSecreta" trust="true" />
+	</target>
+	
+	<target name="copiar-recursos-testes" if="ambiente.teste">
+	    <copy  todir="build/classes">
+	        <fileset dir="src-teste">
+	            <include name="hibernate.cfg.xml"/>
+	            <include name="log4j.xml"/>
+	        </fileset> 
+	    </copy>
+	</target>
+</project>

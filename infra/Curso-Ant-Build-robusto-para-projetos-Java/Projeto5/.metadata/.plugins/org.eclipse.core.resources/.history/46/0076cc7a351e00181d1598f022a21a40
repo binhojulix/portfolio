@@ -1,0 +1,17 @@
+<project name="tarefas" default="empacotar">
+
+    <target name="compilar">
+        <mkdir dir="build"/>
+        <javac srcdir="src" destdir="build">
+            <classpath>
+                <fileset dir="/pastaInstalacaoANT/lib">
+                    <include name="ant.jar" />
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="empacotar" depends="compilar">
+        <jar destfile="build/logtask.jar" basedir="build" />
+    </target>
+</project>

@@ -1,0 +1,22 @@
+<target name="executar-testes" depends="compilar-teste">
+	<junit haltonfailure="yes" showoutput="true" printsummary="on">
+		<batchtest todir="relatorio-teste">
+			<formatter type="plain" />
+			<fileset dir="src-teste">
+				<include name="**/*Test.java" />
+			</fileset>
+		</batchtest>
+		<classpath>
+			<pathelement location="build/classes" />
+			<pathelement location="build/classes-teste" />
+
+			<fileset dir="WebContent/WEB-INF/lib">
+				<include name="*.jar" />
+			</fileset>
+
+			<fileset dir="lib-teste">
+				<include name="*.jar" />
+			</fileset>
+		</classpath>
+	</junit>
+</target>

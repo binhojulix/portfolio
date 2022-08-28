@@ -1,0 +1,53 @@
+<project name="agenda" default="compilar">
+	<property file="build.propeties"/>
+
+	<path id="classpath-compilacao">
+		<fileset dir="WebContent/WEB-INF/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="classpath-compilacao-teste">
+		<path refid="classpath-compilacao" />
+		<fileset dir="lib-teste">
+			<include name="*.jar" />
+		</fileset>
+		<pathelement path="build/classes" />
+	</path>
+
+	<path id="classpath-execucao-teste">
+		<path refid="classpath-compilacao-teste" />
+		<pathelement path="build/classes-teste" />
+	</path>
+
+	<target name="limpar">
+		<delete dir="build" />
+		<mkdir dir="build" />
+		<mkdir dir="build/classes" />
+		<mkdir dir="build/classes-teste" />
+	</target>
+
+	<target name="compilar" depends="limpar">
+		<javac destdir="build/classes" srcdir="src">
+			<classpath refid="classpath-compilacao" />
+		</javac>
+	</target>
+
+	<target name="compilar-teste" depends="compilar">
+		<javac destdir="build/classes-teste" srcdir="src-teste">
+			<classpath refid="classpath-compilacao-teste" />
+		</javac>
+	</target>
+
+	<target name="executar-teste" depends="compilar-teste">
+		<junit showoutput="true" printsummary="on">
+			<batchtest>
+				<formatter type="plain" />
+				<fileset dir="src-teste">
+					<include name="**/*Test.java" />
+				</fileset>
+			</batchtest>
+			<classpath refid="classpath-execucao-teste" />
+		</junit>
+	</target>
+</project>
