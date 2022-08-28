@@ -37,6 +37,8 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | exercicio matematico| c | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/c/ExercicioMatematico) |
 | game java| java | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/game_java) |
 | produto| java | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/produto) |
+| materiais| nodejs | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/nodejs/materiais) |
+| gefiServer| nodejs | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/nodejs/gefiServer) |
 
 
 # Web
@@ -61,7 +63,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 
 
 # Dados
-| Titulo        | Artigo           | Repositorio  |
+| Titulo        |tecnologia         | Repositorio  |
 | ------------- |:-------------:| :-----:|
 | airflow | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/airflow/chapter01) |
 | corretor ortografico| python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/corretor-ortografico) |
