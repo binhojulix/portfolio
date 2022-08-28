@@ -19,21 +19,36 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 # Embarcados
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
-| Conceitos	básicos	de	estatística	e	álgebra	linear | | [link](https://github.com/binhojulix/ciencias-de-dados/tree/master/Estat%C3%ADstica) |
-| Estatistica para selecao de atributos | | [link](https://github.com/binhojulix/ciencias-de-dados/blob/master/Estat%C3%ADstica/estatistica_para_selecao_de_atributo.ipynb) |
-
 
 
 # Devops
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
-| Docker | | [link](https://github.com/binhojulix/ciencias-de-dados/tree/master/Estat%C3%ADstica) |
-| Kubernets | | [link](https://github.com/binhojulix/ciencias-de-dados/tree/master/Estat%C3%ADstica) |
 
 
 # Programacao
-| Titulo        | Artigo           | Repositorio  |
+| Titulo        | Linguagem           | Repositorio  |
 | ------------- |:-------------:| :-----:|
 | doorments | php | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/php/doorments) |
 | corretor ortografico| python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/corretor-ortografico) |
 
+# Web
+| Titulo        | Artigo           | Repositorio  |
+| ------------- |:-------------:| :-----:|
+
+# Mobile
+| Titulo        | Artigo           | Repositorio  |
+| ------------- |:-------------:| :-----:|
+
+# Dados
+| Titulo        | Artigo           | Repositorio  |
+| ------------- |:-------------:| :-----:|
+
+
+# Busssiness
+| Titulo        | Artigo           | Repositorio  |
+| ------------- |:-------------:| :-----:|
+
+# Design
+| Titulo        | Artigo           | Repositorio  |
+| ------------- |:-------------:| :-----:|
