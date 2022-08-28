@@ -42,14 +42,17 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 # Mobile
 | Titulo        | Tecnologia          | Repositorio  |
 | ------------- |:-------------:| :-----:|
-| android-floating-action-bar-master| android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android-floating-action-bar-master) |
-| Calculadora| android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/Calculadora) |
+| android-floating-action-bar-master | android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/android-floating-action-bar-master) |
+| Calculadora | android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/Calculadora) |
+| CarroApp | android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/CarroApp) |
+| CrudApp | android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/CrudApp) |
+| DemoLivraria | android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/DemoLivraria) |
+| DemoServices | android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/DemoServices) |
+| GamesDados | android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/GamesDados) |
 
-| CarroApp| android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/CarroApp) |
-| CrudApp| android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/CrudApp) |
-| DemoLivraria| android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/DemoLivraria) |
-| DemoServices| android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/DemoServices) |
-| GamesDados| android | [link](https://github.com/binhojulix/portfolio/tree/master/mobile/android/GamesDados) |
+
+
+
 
 # Dados
 | Titulo        | Artigo           | Repositorio  |
