@@ -39,6 +39,8 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 # Web
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
+| android-floating-action-bar-master | android | [link](https://github.com/binhojulix/portfolio/tree/master/web/web/js/javascript-passos-programacao-orientada-objetos) |
+
 
 # Mobile
 | Titulo        | Tecnologia          | Repositorio  |
