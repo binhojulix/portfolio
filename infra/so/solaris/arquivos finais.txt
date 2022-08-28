@@ -1,0 +1,3 @@
+C:\Users\fabio-cptm\Documents\qemu\qemu-system-sparc64 -l SS-20 -m 512 -bios ss20_v2.25_rom -drive file=C:\Users\fabio-cptm\Documents\diskbakup\cptm12.qcow2,if=ide,bus=0,unit=0
+
+C:\Users\fabio-cptm\Documents\qemu\qemu-system-sparc -M SS-20 -m 512 -bios ss20_v2.25_rom -drive file=C:\Users\fabio-cptm\Documents\diskbakup\cptm12.img,bus=0,unit=0,media=disk -drive file=C:\Users\fabio\Documents\diskbakup\tmp.iso,bus=0,unit=6,media=cdrom -netdev tap,id=mynet1,ifname=tap1 -net nic,model=lance,netdev=mynet1 -display vnc=:2  -cpu "TI SuperSparc 60" -vga tcx

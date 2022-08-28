@@ -1,0 +1,1 @@
+qemu\qemu-system-sparc -M SS-20 -m 512 -bios bin\ss20_v2.25_rom -drive file=cptm12.img,bus=0,unit=0,media=disk -boot c -netdev tap,id=mynet1,ifname=tap1 -net nic,model=lance,netdev=mynet1

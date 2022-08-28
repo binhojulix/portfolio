@@ -1,0 +1,11 @@
+qemu-img create -f qcow2 sparc.qcow2 9663676416
+
+qemu-system-sparc -M SS-5 -m 128 -drive file=sparc.qcow2,bus=0,unit=0,media=disk -drive file=solaris_2.6_598_sparc.iso,bus=0,unit=2,media=cdrom,readonly=on
+
+qemu-system-sparc -M SS-5 -m 128 -drive file=sparc.qcow2,bus=0,unit=0,media=disk
+
+
+qemu-system-sparc -M SS-5 -m 128 -drive file=sparc.qcow2,bus=0,unit=0,media=disk -drive file=solaris_2.6_598_sparc.iso,bus=0,unit=2,media=cdrom,readonly=on -display vnc=:1 -netdev tap,id=mynet0,ifname=tap0 -net nic,model=lance,netdev=mynet0
+
+
+
