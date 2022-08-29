@@ -1,4 +1,4 @@
-# numpy-training
+# streaming_de_dados
 
 # how to run on bash
 1. chmod +x setup.sh
