@@ -80,6 +80,9 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | predict future sale| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/predict_future_sale) |
 | treinando uma rede neural com pytorch| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/redes_neurais/trainando_uma_re_neural_com_pytorch) |
 | modelando uma rede neural com tensorflow| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/redes_neurais/trainando_uma_re_neural_com_pytorch) |
+| Spark streaming de dados | python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/spark/streaming_de_dados) |
+
+
 
 # Busssiness
 | Titulo        | Artigo           | Repositorio  |
