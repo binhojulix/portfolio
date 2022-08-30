@@ -5,4 +5,10 @@ pandas
 numpy
 matplotlib
 cython
-notebook
+wordcloud
+pyspark
+nltk
+python-dotenv
+tweepy
+pysql
+ipykernel
