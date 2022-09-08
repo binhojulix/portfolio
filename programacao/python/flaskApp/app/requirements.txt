@@ -13,3 +13,4 @@ pyodbc
 flask-cors
 flask-ext
 urllib3
+psycopg2 

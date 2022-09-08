@@ -1,3 +1,4 @@
+import logging
 from math import fabs
 from models.base.Fase import Fase
 from models.base.Subfase import Subfase
@@ -25,9 +26,10 @@ class FaseController:
             }
 
     def get_fases(self,  args):
+        logging.critical("passei arqui")
         result = []
         total_elements = {}
-
+        print("get_Fases")
         per_page =args.get('per_page')
         order = args.get("order")
         colum = args.get("colum")
@@ -36,13 +38,17 @@ class FaseController:
         try:
             pageno = 1
             no_of_records_per_page = 10
-            if page is not None and per_page is not None:
+            if page is not None or per_page is not None:
                 if int(page) != 0:
                     pageno = int(page) + 1
                 if int(per_page) != 0:
                     no_of_records_per_page = int(per_page)
+            logging.critical("antes do total")
             total = self.fase_model.get_total_fases()
+            logging.critical("total {}".format(str(total)))
+
             res = self.fase_model.get_fases(page=pageno, per_page=no_of_records_per_page, order=order, colum=colum)
+            print(res)
             for r in res.items:
                 result.append({
                     "id": r.id,

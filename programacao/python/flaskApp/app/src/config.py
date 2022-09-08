@@ -5,7 +5,7 @@ import random, string
 class Config(object):
     CSRF_ENABLED = True,
     CORS_ENABLED = False,
-    SQLALCHEMY_DATABASE_POSTGES= "postgresql://root:root@db:1433/valeEY"
+    SQLALCHEMY_DATABASE_POSTGRES= "postgresql+psycopg2://root:root@db_flask:5432/valeEY"
 
     SQLALCHEMY_DATABASE_URI = \
         '{SGBD}://{usuario}:{senha}@{servidor}/{database}?DRIVER={driver}'.format(

@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
 from sqlalchemy.orm import relationship, joinedload
 from config import app_active, app_config
-
+import logging
 from models.base.Subfase import Subfase
 
 config = app_config[app_active]
@@ -32,6 +32,7 @@ class Fase(db.Model):
         try:
             if page is None or per_page is None:
                 res = db.session.query(Fase).options(joinedload(Fase.subfase)).all()
+                logging.critical(res)
             else:
                 toOrder = db.asc(Fase.descricao)
                 if order=="desc":

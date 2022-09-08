@@ -1,7 +1,7 @@
 from controllers.base.SubfaseController import SubFaseController
 from controllers.base.FaseController import FaseController
 from flask import Flask, request, Response, json
-
+import logging
 def routes_fases(app):
 
     @app.route("/fases", methods=['GET'])

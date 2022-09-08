@@ -12,7 +12,8 @@ id_fase smallint NOT NULL DEFAULT nextval('fase_id_seq') primary key,
 id_sub_fase smallint not null,
  CONSTRAINT fk_fase
       FOREIGN KEY(id_sub_fase) 
-	  REFERENCES subfase(id_sub_fase));
+	  REFERENCES subfase(id_sub_fase),
+	 descricao_fase varchar(200) );
 
 
 
@@ -49,9 +50,9 @@ foreign key references unidade_operacional(id_unidade_operacional),
 descricao_ativo nvarchar(50) );
 
 
+select *from SUBFASE;
 
-
-INSERT INTO valeEY.dbo.subfase
+INSERT INTO Subfase
 (descricao_sub_fase)
 VALUES('fase1');
 INSERT INTO valeEY.dbo.subfase
@@ -61,9 +62,11 @@ INSERT INTO valeEY.dbo.subfase
 (descricao_sub_fase)
 VALUES('fase3');
 
-INSERT INTO valeEY.dbo.fase
+INSERT INTO fase
 (id_sub_fase, descricao_fase)
 VALUES(1, 'fase 1');
+
+
 INSERT INTO valeEY.dbo.fase
 (id_sub_fase, descricao_fase)
 VALUES(1, 'fase 2');
@@ -72,4 +75,4 @@ INSERT INTO valeEY.dbo.fase
 VALUES(1, 'fase 3');
 
 SELECT id_fase, id_sub_fase, descricao_fase
-FROM valeEY.dbo.fase;
+FROM fase;

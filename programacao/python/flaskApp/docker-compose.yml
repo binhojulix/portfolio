@@ -19,7 +19,8 @@ services:
       - ./app:/app/
   db:
     image: postgres
-    container_name: flaskdb
+    container_name: db_flask
+    hostname: db_flaskdb
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
