@@ -1,0 +1,46 @@
+version: "3.8"
+services:
+  app:
+    container_name: app
+    hostname: app
+    mem_limit: 512m
+    mem_reservation: 128M
+    cpus: 0.5
+    build: 
+     context: app
+    restart: unless-stopped
+    links:
+      - db
+    ports:
+      - "5005:5005"
+    depends_on:
+      - db
+    volumes:
+      - ./app:/app/
+  db:
+    image: postgres
+    container_name: flaskdb
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=root
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./postgres/db:/docker-entrypoint-initdb.d/
+      - ./postgres/data:/var/lib/postgresql/data
+  nginx:
+    restart: always
+    container_name: nginx
+    mem_limit: 512m
+    mem_reservation: 128M
+    cpus: 0.5
+    hostname: nginx
+    build: ./nginx/
+    volumes:
+      - ./nginx/sites-enabled:/usr/share/nginx/html/
+    ports:
+      - "81:81"
+    links:
+      - app
+

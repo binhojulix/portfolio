@@ -1,0 +1,15 @@
+flask
+pytest
+pytest-base-url
+plotly
+pandas
+requests
+SQLAlchemy
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Script
+werkzeug
+pyodbc
+flask-cors
+flask-ext
+urllib3
