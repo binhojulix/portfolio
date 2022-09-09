@@ -4,6 +4,7 @@ WORKDIR /app
 # install FreeTDS and dependencies
 RUN apt-get update \
  && apt-get install unixodbc -y \
+ && apt-get install -y netcat -y \
  && apt-get install unixodbc-dev -y \
  && apt-get install freetds-dev -y \
  && apt-get install freetds-bin -y \
@@ -16,8 +17,11 @@ Description = FreeTDS Driver\n\
 Driver = /usr/lib/x86_64-linux-gnu/odbc/libtdsodbc.so\n\
 Setup = /usr/lib/x86_64-linux-gnu/odbc/libtdsS.so" >> /etc/odbcinst.ini
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt --upgrade pip
 ENV FLASK_ENV=development
-ENV DATABASE=db
+ENV DATABASE=db_flask
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 ENTRYPOINT ["python"]
 CMD ["src/run.py"]

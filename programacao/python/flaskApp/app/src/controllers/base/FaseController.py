@@ -26,7 +26,6 @@ class FaseController:
             }
 
     def get_fases(self,  args):
-        logging.critical("passei arqui")
         result = []
         total_elements = {}
         print("get_Fases")
@@ -43,13 +42,12 @@ class FaseController:
                     pageno = int(page) + 1
                 if int(per_page) != 0:
                     no_of_records_per_page = int(per_page)
-            logging.critical("antes do total")
             total = self.fase_model.get_total_fases()
-            logging.critical("total {}".format(str(total)))
-
+        
             res = self.fase_model.get_fases(page=pageno, per_page=no_of_records_per_page, order=order, colum=colum)
-            print(res)
-            for r in res.items:
+            #total = self.fase_model.get_total_fases()
+            logging.critical(res)
+            for r in res:
                 result.append({
                     "id": r.id,
                     "descricao": r.descricao,

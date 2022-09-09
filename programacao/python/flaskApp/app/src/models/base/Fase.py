@@ -31,16 +31,20 @@ class Fase(db.Model):
     def get_fases(self, page, per_page, order, colum):
         try:
             if page is None or per_page is None:
+     
                 res = db.session.query(Fase).options(joinedload(Fase.subfase)).all()
-                logging.critical(res)
+ 
             else:
+
                 toOrder = db.asc(Fase.descricao)
                 if order=="desc":
                     toOrder = db.desc(Fase.descricao)
-                res = db.session.query(Fase).options(joinedload(Fase.subfase)).order_by(toOrder).paginate(page=int(page), per_page=int(per_page))
+
+                res = db.session.query(Fase).options(joinedload(Fase.subfase)).all()
+              
         except Exception as e:
             res = []
-            print(e)
+            logging.error(e)
         finally:
             db.session.close()
             return res
