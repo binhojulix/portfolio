@@ -5,7 +5,7 @@
 
 # To run on Azure AKS
 1. terraform init
-2. terraform plan -out main.tfplan
+
 
 
 
