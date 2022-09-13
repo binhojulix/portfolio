@@ -14,8 +14,7 @@
 # To run on kubernets
 
 1. docker build -f Dockerfile -t automatizator:latest .
-2. docker run -p 5000:5000 automatizator
-3. kubectl apply -f deployment.yaml
+
 
 
 
