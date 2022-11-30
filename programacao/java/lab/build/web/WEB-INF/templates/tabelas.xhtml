@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <ui:composition>
+
+
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                Tabelas
+                            </h4>
+                        </div>
+                    </div>
+
+                    <h:form style="margin: 10px">
+
+                        <f:ajax listener="#{tabelaBean.consultarTabela}" event="change" execute="grid_edicao" render="grid_edicao grid_listagem">
+
+                            <h:panelGrid columns="1" style="margin: 15px" id="grid_edicao">
+
+                                <h:selectOneMenu value="#{tabelaBean.tabelado}" styleClass="form-control">
+                                    <f:selectItem itemLabel=" " noSelectionOption="true"/>
+                                    <f:selectItem itemValue="1" itemLabel="Area"/>
+                                    <f:selectItem itemValue="2" itemLabel="Atividade"/>
+                                    <f:selectItem itemValue="14" itemLabel="Atraso atuação"/>
+                                    <f:selectItem itemValue="16" itemLabel="Atraso inicio da atuação"/>
+                                    <f:selectItem itemValue="15" itemLabel="Atraso recebimento"/>
+                                    <f:selectItem itemValue="13" itemLabel="Atraso reparação"/>
+                                    <f:selectItem itemValue="17" itemLabel="Atuação"/> 
+                                    <f:selectItem itemValue="3" itemLabel="Avaria"/>    
+                                    <f:selectItem itemValue="4" itemLabel="Causa"/>  
+                                    <f:selectItem itemValue="6" itemLabel="Estação"/>
+                                    <f:selectItem itemValue="7" itemLabel="Fechamento"/>
+                                    <f:selectItem itemValue="8" itemLabel="Finalidade"/>
+                                    <f:selectItem itemValue="9" itemLabel="Instrumento"/>
+                                    <f:selectItem itemValue="10" itemLabel="Liberação"/>
+                                    <f:selectItem itemValue="11" itemLabel="Local"/>            
+                                </h:selectOneMenu>
+
+                            </h:panelGrid>
+
+                            <h:panelGrid id="grid_listagem">
+
+                                <p:dataTable  value="#{tabelaBean.tabelas}" var="tabela"
+                                              paginator="true" rows="10"             
+                                              id="tabela_codigos" filteredValue="#{tabelaBean.tabelasFiltrada}"
+                                              rendered="#{!empty tabelaBean.tabelas}"
+                                              emptyMessage="" paginatorPosition="bottom"   
+                                              paginatorTemplate="{FirstPageLink} {PreviousPageLink}
+                                              {NextPageLink} {LastPageLink}">  
+
+                                    <p:column style="width: 150px" filterBy="#{tabela.codigo}" filterMatchMode="contains">
+                                        <f:facet name="header">Código</f:facet>
+                                        <h:outputText value="#{tabela.codigo}"/>
+                                    </p:column>
+
+                                    <p:column style="width: 600px" filterBy="#{tabela.descricao}" filterMatchMode="contains">
+                                        <f:facet name="header">Descrição</f:facet>
+                                        <h:outputText value="#{tabela.descricao}"/>
+                                    </p:column>
+
+                                </p:dataTable>
+
+                            </h:panelGrid>
+
+                        </f:ajax>
+
+                    </h:form>
+
+                </div>
+            </div>
+        </div>
+
+
+    </ui:composition>
+</html>

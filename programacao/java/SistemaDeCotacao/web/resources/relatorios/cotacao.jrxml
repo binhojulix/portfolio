@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="protocolo_entrega" pageWidth="595" pageHeight="842" columnWidth="575" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10" uuid="359b3db6-a5b9-4cd9-8b68-69bf8d4ec138">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="label" fontName="Arial" fontSize="9" isUnderline="false" isStrikeThrough="false"/>
+	<style name="valores" fontName="Arial" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+	</style>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#E1B171">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#E6DCCF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="3fa03217-4570-483f-bc4e-c25b79c23cb0"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2854d4b6-2933-4989-9dac-5b3047ff2153" x="154" y="10" width="259" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cotação de Materiais]]></text>
+			</staticText>
+			<image onErrorType="Blank">
+				<reportElement uuid="90767b33-fd23-42ae-bc92-c23f40d4fec9" x="0" y="0" width="86" height="40"/>
+				<imageExpression><![CDATA["C:\\SO\\CPTM.JPG"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="91" splitType="Stretch">
+			<elementGroup/>
+			<line>
+				<reportElement uuid="d155affb-1462-4636-83b4-ddb05bfb1038" x="0" y="1" width="575" height="1"/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="93">
+			<line>
+				<reportElement uuid="b2ce25f8-debc-42b0-b867-6e395de7e136" x="105" y="14" width="189" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="d4d5c2c9-75c6-49ed-934f-665697087905" x="0" y="0" width="77" height="15"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome da Empresa:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="ab10233f-bb50-4655-b3e9-36cbbcbbae2f" x="475" y="65" width="100" height="20"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="bec585bd-4ba8-4c82-9fd4-e668728c2003" x="0" y="0" width="575" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="3a544ec1-c479-47bc-b5ce-0682db0a523e" x="0" y="33" width="77" height="20"/>
+				<textElement/>
+				<text><![CDATA[CNPJ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e53f7a74-0bdd-42bd-af18-6d6e0e08c56d" x="0" y="53" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Endereço:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4d3c1e9d-5b27-4fc4-b882-74c699a25771" x="0" y="73" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Telefone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2dc5d4f1-08ee-4f49-a30f-d0eb4143370e" x="0" y="13" width="77" height="20"/>
+				<textElement/>
+				<text><![CDATA[Razão Social]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
