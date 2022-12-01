@@ -93,3 +93,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
 | design | powerpoint | [link](https://github.com/binhojulix/portfolio/tree/master/design) |
+
+
+
+
