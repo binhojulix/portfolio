@@ -11,6 +11,7 @@ x-environment: &airflow_environment
   - AIRFLOW__WEBSERVER__RBAC=False
 x-airflow-image: &airflow_image apache/airflow:2.0.0-python3.8
 # ====================================== /AIRFLOW ENVIRONMENT VARIABLES ======================================
+
 services:
   prometheus:
       image: prom/prometheus:latest
@@ -61,6 +62,5 @@ services:
       - logs:/opt/airflow/logs
     environment: *airflow_environment
     command: pip install -r requirements.txt && scheduler
-
 volumes:
   logs:
