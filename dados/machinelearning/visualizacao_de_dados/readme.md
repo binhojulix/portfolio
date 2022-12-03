@@ -1,1 +1,1 @@
-📕 Versão Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/binhojulix/portfolio/blob/master/dados/visaocomputacional/fiap-ml-visao-computacional-auditoria-video-master/projeto/object-people-audit-colab.ipynb)
+📕 Versão Google Colab [![Open In Colab](https://colab.research.google.com/github/binhojulix/portfolio/blob/master/dados/machinelearning/visualizacao_de_dados/plotly.ipynb)
