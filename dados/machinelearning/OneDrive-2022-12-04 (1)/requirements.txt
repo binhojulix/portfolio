@@ -1,0 +1,21 @@
+Anaconda (python 3)
+https://www.anaconda.com/distribution/  
+
+Tensorflow
+https://www.tensorflow.org/install 
+
+Pytorch
+http://deeplizard.com/learn/video/UWlFM0R_x6I  
+
+Keras
+https://pypi.org/project/Keras/ 
+
+Gensim
+https://pypi.org/project/gensim/
+
+skfuzzy
+https://pythonhosted.org/scikit-fuzzy/
+
+
+conda install graphviz
+conda install pydotplus
