@@ -1,1 +1,1 @@
-📕 Versão Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/binhojulix/portfolio/blob/master/dados/machinelearning/nlp/spark_nlp/projeto_aula_1_3.ipynb)
+📕 Versão Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/binhojulix/portfolio/blob/master/dados/nlp/spark_nlp/projeto_aula_1_3.ipynb)
