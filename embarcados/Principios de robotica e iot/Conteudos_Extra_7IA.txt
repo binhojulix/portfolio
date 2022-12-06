@@ -1,0 +1,80 @@
+---------------------------------------
+Introdução a Robótica e IOT (Turma 7IA)
+---------------------------------------
+---------------
+Vídeos Aula 01:
+---------------
+
+https://www.youtube.com/watch?v=uzM32wVTbsY
+
+https://www.youtube.com/watch?v=sxGDdwbcfJg
+
+https://www.youtube.com/watch?v=QSIPNhOiMoE
+
+https://www.youtube.com/watch?v=wn7DBdaUNLA 
+
+https://www.youtube.com/watch?v=uqi0ZAYPyPk 
+
+https://www.youtube.com/watch?v=CJNKZPs2xqM
+
+https://www.youtube.com/watch?v=mlE03Fj2T9s
+
+---------------
+Vídeos Aula 02:
+---------------
+
+https://www.youtube.com/watch?v=CJNKZPs2xqM
+
+https://www.youtube.com/watch?v=UoBUXOOdLXY
+
+https://www.youtube.com/watch?v=mlE03Fj2T9s
+
+https://www.youtube.com/watch?v=JrRS8qRYXCQ
+
+https://www.youtube.com/watch?v=0QKrHi-G9WQ
+
+https://www.youtube.com/watch?v=D5BXm1HXk3Y
+
+https://www.youtube.com/watch?v=H_X6IP1-NDc
+
+---------------
+Vídeos Aula 03:
+---------------
+
+https://www.youtube.com/watch?v=POHYyP4EbzE
+
+https://www.youtube.com/watch?v=vgoX_m6Mkko
+
+https://www.youtube.com/watch?v=pGtnC1jKpMg
+
+-------------------------------
+- Sites com projetos completos:
+-------------------------------
+
+https://www.instructables.com/
+
+https://www.hackster.io/
+
+https://makezine.com/
+
+---------------------------
+- Simulação e prototipação:
+---------------------------
+
+Tinkercad - https://www.tinkercad.com/
+
+------------------------------------
+- Sites de vendas de peças em geral:
+------------------------------------
+
+https://www.robocore.net/
+
+https://www.filipeflop.com/
+
+--------------------------------------
+- Sites de lojas físicas em São Paulo:
+--------------------------------------
+
+https://www.mamuteeletronica.com.br/home
+
+http://www.hperobotica.com.br/
