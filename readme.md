@@ -28,7 +28,6 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | airflow | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/airflow/chapter01) |
 | extracao_de_dado | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/airflow/chapter01) |
 | apache beam | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/airflow/chapter01) |
-| corretor ortografico| python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/corretor-ortografico) |
 | numpy training | python |[link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/numpy-training-main) |
 | pandas basico| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/pandas-basico-main) |
 | pandas entrada saida de dados| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/pandas-entrada-saida-de-dados-main) |
@@ -45,8 +44,10 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | Spark streaming de dados | python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/spark/streaming_de_dados) |
 | Microservico | python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/flaskApp)|
 | Rede neural com numpy | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/redes_neurais/rede_neural_com_numpy)|
-
-
+| mediapipe | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/opencv/mediapipe)|
+| sistema de recomendacao | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/sistema_recomendacao)|
+| visualizacao de dados | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/visualizacao_de_dados)|
+| mapas interativos | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/geolacalizacao/mapas_iterativos/Geoopandas)|
 
 # Design
 | Titulo        | Artigo           | Repositorio  |
