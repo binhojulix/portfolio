@@ -113,8 +113,8 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | materiais| nodejs | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/nodejs/materiais) |
 | gefiServer| nodejs | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/nodejs/gefiServer) |
 | ntlak| nodejs | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/nodejs/ntalk) |
-| websock| nodejs| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/nodejs/websock_mongodb|
-| salao|python| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/projeto-salacao|
+| websock| nodejs| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/nodejs/websock_mongodb)|
+| salao|python| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/projeto-salacao)|
 
 # Web
 | Titulo        | Artigo           | Repositorio  |
