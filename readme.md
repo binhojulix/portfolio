@@ -48,6 +48,9 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | sistema de recomendacao | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/sistema_recomendacao)|
 | visualizacao de dados | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/visualizacao_de_dados)|
 | mapas interativos | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/geolacalizacao/mapas_iterativos/Geoopandas)|
+| treinando uma rede neural com numpy | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/redes_neurais/rede_neural_com_numpy)|
+| mlops basico| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/mlops/mlops-machine-learning)|
+| mlops machien learning| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/mlops/mlops)|
 
 # Design
 | Titulo        | Artigo           | Repositorio  |
