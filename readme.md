@@ -61,12 +61,12 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | graficos com multivariaveis| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machine_learning/graficos_multivariaveis)|
 | clustering| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machine_learning/clustering)|
 | classificacao| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machine_learning/classificacao)|
-| classificacao| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/nlp/analise_sentiimentos)|
+| analise de sentimentos| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/nlp/analise_sentiimentos)|
  | spark nlp| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/nlp/spark_nkp)|
 | stemming| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/nlp/stemming)|
 | word2vec| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/nlp/word2vec)|
-| python para data science python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/python)|
-| sample opencv| [link](https://github.com/binhojulix/portfolio/tree/master/dados/visaocomputacional/opencv_basico)|
+| python para data science python| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/python)|
+| sample opencv|python|  [link](https://github.com/binhojulix/portfolio/tree/master/dados/visaocomputacional/opencv_basico)|
 
 
 # Design
