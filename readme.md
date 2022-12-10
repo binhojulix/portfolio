@@ -33,7 +33,6 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | pandas entrada saida de dados| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/pandas-entrada-saida-de-dados-main) |
 | Linguagem R| R| [link](https://github.com/binhojulix/portfolio/tree/master/dados/linguagem_r) |
 | auditoria visao computacional| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/visaocomputacional/fiap-ml-visao-computacional-auditoria-video-master) |
-| Estastistica| python-R| [link](https://github.com/binhojulix/portfolio/tree/master/dados/Estat%C3%ADstica) |
 | Geolocalizacao| sql| [link](https://github.com/binhojulix/portfolio/tree/master/dados/geolacalizacao) |
 | linguagem python | python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/linguagem_python) |
 | deteccao de fraude | python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/deteccao_fraude) |
@@ -60,6 +59,15 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | analise de dados com r| r| [link](https://github.com/binhojulix/portfolio/tree/master/dados/linguagem_r/analise_de_dados_com_R)|
 | series temporais| r| [link](https://github.com/binhojulix/portfolio/tree/master/dados/linguagem_r/series_temporais_com_R)|
 | graficos com multivariaveis| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machine_learning/graficos_multivariaveis)|
+| clustering| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machine_learning/clustering)|
+| classificacao| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/machine_learning/classificacao)|
+| classificacao| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/nlp/analise_sentiimentos)|
+ | spark nlp| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/nlp/spark_nkp)|
+| stemming| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/nlp/stemming)|
+| word2vec| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/nlp/word2vec)|
+| python para data science python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/python)|
+| sample opencv| [link](https://github.com/binhojulix/portfolio/tree/master/dados/visaocomputacional/opencv_basico)|
+
 
 # Design
 | Titulo        | Artigo           | Repositorio  |
