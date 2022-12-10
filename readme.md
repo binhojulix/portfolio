@@ -51,6 +51,12 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | treinando uma rede neural com numpy | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/redes_neurais/rede_neural_com_numpy)|
 | mlops basico| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/mlops/mlops-machine-learning)|
 | mlops machien learning| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/mlops/mlops)|
+| regressao linear com r| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/estatistica/ajuste_interpretacao_regressao_linear_com_r)|
+| distribuicao de poison| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/estatistica/distribuicao_poison)|
+| estatistica com python distribuicao e medidas| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/estatistica/estatistica_com_python_distribuicao_e_medidas)|
+| estatistica para selecao de atributos| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/estatistica/estatistica_para_selecao_de_atributos)|
+| probabilidade e amostragem | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/estatistica/probabilidade_e_amostragem)|
+| teste de hipotese| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/estatistica/teste_de_hipotese)|
 
 # Design
 | Titulo        | Artigo           | Repositorio  |
