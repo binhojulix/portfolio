@@ -57,6 +57,9 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | estatistica para selecao de atributos| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/estatistica/estatistica_para_selecao_de_atributos)|
 | probabilidade e amostragem | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/estatistica/probabilidade_e_amostragem)|
 | teste de hipotese| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/estatistica/teste_de_hipotese)|
+| analise de dados com r| r| [link](https://github.com/binhojulix/portfolio/tree/master/dados/linguagem_r/analise_de_dados_com_R)|
+| series temporais| r| [link](https://github.com/binhojulix/portfolio/tree/master/dados/linguagem_r/series_temporais_com_R)|
+
 
 # Design
 | Titulo        | Artigo           | Repositorio  |
