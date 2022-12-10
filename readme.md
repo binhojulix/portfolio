@@ -82,7 +82,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | modelando uma rede neural com tensorflow| python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/redes_neurais/trainando_uma_re_neural_com_pytorch) |
 | Spark streaming de dados | python| [link](https://github.com/binhojulix/portfolio/tree/master/dados/spark/streaming_de_dados) |
 | Microservico | python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/flaskApp)|
-
+| Rede neural com numpy | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/redes_neurais/rede_neural_com_numpy s)|
 
 
 # Busssiness
