@@ -20,7 +20,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 # Busssiness
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
-| matriz de risco | excel | [link](https://github.com/binhojulix/portfolio/tree/master/bussiness/A3V3 - Matriz de Riscos.xlsx) |
+| matriz de risco | excel | [link](https://github.com/binhojulix/portfolio/tree/master/bussiness/matriz_de_risco.xlsx) |
 
 # Dados
 | Titulo        |tecnologia         | Repositorio  |
@@ -30,7 +30,6 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | airflow | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/airflow/extracao-dos-dados) |
 
 | apache beam | python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/apache-beam) |
-
 | corretor ortografico| python | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/corretor-ortografico) |
 | numpy training | python |[link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/numpy-training-main) |
 | pandas basico| python | [link](https://github.com/binhojulix/portfolio/tree/master/dados/machinelearning/pandas-basico-main) |
