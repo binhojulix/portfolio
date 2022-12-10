@@ -115,6 +115,12 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | ntlak| nodejs | [link](https://github.com/binhojulix/portfolio/tree/master/programacao/nodejs/ntalk) |
 | websock| nodejs| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/nodejs/websock_mongodb)|
 | salao|python| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/python/projeto-salacao)|
+| Combinacao| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/Combinacao)|
+| Calc| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/Calc)|
+| Clean-architecuture| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/clean-architecture)|
+| ant| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/Maven Gerenciamento de dependencias e buil de aplicações Java)|
+| maven| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/Curso-Ant-Build-robusto-para-projetos-Java)|
+| Cotacao| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/Cotacao)|
 
 # Web
 | Titulo        | Artigo           | Repositorio  |
