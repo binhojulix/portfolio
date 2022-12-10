@@ -121,7 +121,8 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | ant| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/ant)|
 | maven| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/maven)|
 | Cotacao| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/Cotacao)|
-
+| Controle de produtos| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/controle-produtos)|
+| Kmeans| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/kmeans)|
 # Web
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
