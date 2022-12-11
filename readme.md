@@ -128,6 +128,7 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | lab| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/lab)|
 | printerOSM| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/printerOSM)|
 | Sistema de Cotacao| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/SistemaDeCotacao)|
+| AluraFood| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/alurafood)|
 # Web
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
