@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8605060c-00d5-4046-9b6f-d57ca818ab8c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ant/Projeto5/Servers/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Projeto5/Servers/.settings/org.eclipse.wst.server.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Projeto5/Servers/Tomcat v7.0 Server at localhost-config/catalina.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Projeto5/Servers/Tomcat v7.0 Server at localhost-config/catalina.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Projeto5/Servers/Tomcat v7.0 Server at localhost-config/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Projeto5/Servers/Tomcat v7.0 Server at localhost-config/server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Projeto5/Servers/Tomcat v7.0 Server at localhost-config/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Projeto5/Servers/Tomcat v7.0 Server at localhost-config/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Servers/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Servers/.settings/org.eclipse.wst.server.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Servers/Tomcat v7.0 Server at localhost-config/catalina.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Servers/Tomcat v7.0 Server at localhost-config/catalina.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Servers/Tomcat v7.0 Server at localhost-config/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Servers/Tomcat v7.0 Server at localhost-config/server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Servers/Tomcat v7.0 Server at localhost-config/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ant/Servers/Tomcat v7.0 Server at localhost-config/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/lab.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/conversores/MaterialConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/conversores/OrdemServicoConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/conversores/TabelaConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/conversores/UsuarioConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/email/util/Mailer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/email/util/Mailer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/finalidade/EFinalidade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/finalidade/Equipamento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/finalidade/FinalidadeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/finalidade/FinalidadeJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/finalidade/FinalidadeRN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/finalidade/Teste.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/material/Material.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/material/MaterialDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/material/MaterialJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/material/MaterialRN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/modulo/Modulo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/modulo/ModuloAtraso.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/modulo/ModuloDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/modulo/ModuloFinalidade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/modulo/ModuloInstrumento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/modulo/ModuloJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/modulo/ModuloMovimentacao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/modulo/ModuloRN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/modulo/ModuloUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/movimentacao/Movimentacao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/movimentacao/MovimentacaoDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/movimentacao/MovimentacaoJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/movimentacao/MovimentacaoRN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/osm/Equipamento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/osm/OrdemServico.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/osm/OrdemServicoDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/osm/OrdemServicoJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/osm/OrdemServicoRN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/sff/Andamento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/sff/Sff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/sff/SffDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/sff/SffJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/sff/SffRN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/tabela/Complexidade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/tabela/Tabela.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/tabela/TabelaDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/tabela/TabelaJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/tabela/TabelaRN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/tabela/teste.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/usuario/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/usuario/UsuarioDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/usuario/UsuarioJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/modelos/usuario/UsuarioRN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/relatorio/util/Equipamento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/relatorio/util/Funcionario$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/relatorio/util/Funcionario$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/relatorio/util/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/relatorio/util/RelatorioDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/relatorio/util/RelatorioJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/relatorio/util/RelatorioRN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/relatorio/util/Sistema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/relatorio/util/SistemaGeral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/relatorio/util/Subsistema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/util/ConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/util/RelatorioUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/util/UsuarioUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/validadores/DateValidador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/FinalidadeBBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/MaterialBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/ModuloBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/MovimentacaoBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/OrdemServicoAberturaBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/OrdemServicoBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/OrdemServicoEntregaBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/SessionBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/SffBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/SffBeanCadastro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/TabelaBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/br/com/lab/web/UsuarioBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/faces-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/activation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/bootstrap-1.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/commons-beanutils-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/commons-codec-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/commons-collections-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/commons-digester-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/commons-fileupload-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/commons-logging-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/iText-2.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/jasperreports-4.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/java-mail-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/javax.faces.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/mail.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/mysql-connector-java-5.1.23-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/primefaces-4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/lib/sam-1.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/templates/menu.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/templates/tabelas.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/templates/template.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/acesso_negado.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/erros/404.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/erros/erro.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/erros/sessao_expirada.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/index.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/publico/home.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/publico/materiais.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/publico/usuarios.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/imagens/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/js/locale-primefaces.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/js/modernizr-2.6.2-respond-1.1.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/relatorio/CPTM.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/relatorio/SO/CPTM.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/relatorio/digitalizar0001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/relatorio/protocolo.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/relatorio/protocolo.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/relatorio/protocolo_entrega.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/relatorio/protocolo_entrega.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/relatorio/protocolo_recebimento.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/resources/relatorio/protocolo_recebimento.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/restrict/abertura.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/restrict/entregar.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/restrict/fechar.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/restrict/finalidades.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/restrict/material.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/restrict/movimentacao.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/restrict/movimentacoes.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/restrict/usuario.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/sff/adm-sff.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/sff/cadastrar-sff.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/ant-deploy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/faces-config.NavData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IkG6y3PiH3a5I41AarWa2oNTde" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8605060c-00d5-4046-9b6f-d57ca818ab8c" name="Changes" comment="" />
+      <created>1670717996044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670717996044</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -123,6 +123,11 @@ Data Science tópicos com códigos e artigos no meu [java blog]https://medium.co
 | Cotacao| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/Cotacao)|
 | Controle de produtos| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/controle-produtos)|
 | Kmeans| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/kmeans)|
+| Kmeans| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/kmeans)|
+| FinalPrinter| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/FinalPrinter)|
+| lab| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/lab)|
+| printerOSM| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/printerOSM)|
+| Sistema de Cotacao| Java| [link](https://github.com/binhojulix/portfolio/tree/master/programacao/java/SistemaDeCotacao)|
 # Web
 | Titulo        | Artigo           | Repositorio  |
 | ------------- |:-------------:| :-----:|
