@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.myorg</groupId>
-    <artifactId>alura-aws-infra</artifactId>
+    <artifactId>infra</artifactId>
     <version>0.1</version>
 
     <properties>
