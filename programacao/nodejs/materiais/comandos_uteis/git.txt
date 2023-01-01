@@ -1,3 +1,0 @@
-git add .
-git commit -m 'uma mensagem de commit'
-git push origin -u master

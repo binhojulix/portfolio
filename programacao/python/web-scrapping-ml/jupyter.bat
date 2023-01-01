@@ -1,1 +1,0 @@
-CALL venv\Scripts\jupyter-notebook
