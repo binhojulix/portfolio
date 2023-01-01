@@ -1,0 +1,2 @@
+📕 Versão Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/binhojulix/portfolio/blob/master/dados/redes_neurais/treinando_uma_re_neural_com_pytorch/treinando_uma_rede_neural_com_pytorch.ipynb)
+ 
