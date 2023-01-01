@@ -1,7 +1,0 @@
-package br.com.caelum.task;
-
-import org.apache.tools.ant.Task;
-
-public class MensagemTask extends Task {
-
-}
