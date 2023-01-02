@@ -5,4 +5,5 @@ services:
      context: scrap
     volumes:
       - ./scrap:/scrap/ 
+      - ./data:/data/
 

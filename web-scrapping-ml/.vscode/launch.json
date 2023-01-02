@@ -8,9 +8,19 @@
             "name": "Python: Arquivo Atual",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
+            "program": "${}",
             "console": "integratedTerminal",
             "justMyCode": true
-        }
+        },
+
+        {
+            "name": "Python: app.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/scrap/src/app.py",
+            "args" : ["--port", "1593"]
+        },
+       
+
     ]
 }

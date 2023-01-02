@@ -79,17 +79,18 @@ class Scrap(Thread):
 
                         produto = produtoBuilder.build()
                         produtos.append(produto)
-                    
-                df = pd.DataFrame([t.__dict__ for t in produtos ])
-                df.rename(columns={'_Produto__reviews_amount': 'reviews_amount', '_Produto__cores_disponiveis': 'cores_disponiveis',
-                        '_Produto__frete':'produto_frete', '_Produto__titulo':'produto_titulo', 
-                        'produto__titulo':'Produto_titulo', '_Produto__preco':'produto_preco'}, inplace=True)
-                textStract = TextStract()
-                df['produto_preco'] = df['produto_preco'].apply(textStract.convertDouble)
-                df.to_csv('dataset.csv', sep=';', index = False, encoding = 'utf-8-sig')
             except:
-                logging.error('URL INVALIDA!')
+                    logging.error('URL INVALIDA!')
 
+                    
+            df = pd.DataFrame([t.__dict__ for t in produtos ])
+            df.rename(columns={'_Produto__reviews_amount': 'reviews_amount', '_Produto__cores_disponiveis': 'cores_disponiveis',
+                    '_Produto__frete':'produto_frete', '_Produto__titulo':'produto_titulo', 
+                    'produto__titulo':'Produto_titulo', '_Produto__preco':'produto_preco'}, inplace=True)
+            textStract = TextStract()
+            df['produto_preco'] = df['produto_preco'].apply(textStract.convertDouble)
+            df.to_csv('/data/dataset.csv', sep=';', index = False, encoding = 'utf-8-sig')
+        
    
 
     def run(self):
