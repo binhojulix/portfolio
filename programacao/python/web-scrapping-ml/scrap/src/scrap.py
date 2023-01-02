@@ -12,6 +12,7 @@ class Scrap(Thread):
     def __init__(self, limit):
         Thread.__init__(self)
         self.__limit = limit
+        
 
     @staticmethod
     def geradorUrl():
