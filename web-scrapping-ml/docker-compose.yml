@@ -2,7 +2,7 @@ version: "3.9"
 services:
   scrap:
     build: 
-     context: ${SERVICE}
+     context: scrap
     volumes:
-      - .:/data
+      - ./scrap:/scrap/ 
 
